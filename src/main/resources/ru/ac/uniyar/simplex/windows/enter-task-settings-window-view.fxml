@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.String?>
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="20.0"
+      fx:controller="ru.ac.uniyar.simplex.controllers.EnterTaskSettingsController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Ввод задачи"/>
+    <Label fx:id="debugText"/>
+    <HBox>
+        <Label text="Кол-во переменных: "/>
+        <TextField fx:id="variablesField" onKeyReleased="#changeVariablesField"/>
+    </HBox>
+    <HBox>
+        <Label text="Кол-во ограничений: "/>
+        <TextField fx:id="limitationsField" onKeyReleased="#changeLimitationsField"/>
+    </HBox>
+    <HBox>
+        <Label text="Выбор задачи: "/>
+        <ChoiceBox fx:id="choiceTaskBox" onAction="#changeChoiceTaskBox" value="Задача">
+            <String fx:value="Минимизировать"/>
+            <String fx:value="Максимизировать"/>
+        </ChoiceBox>
+    </HBox>
+
+    <Button text="Продолжить" minWidth="150" onAction="#onSubmitButtonClick"/>
+</VBox>

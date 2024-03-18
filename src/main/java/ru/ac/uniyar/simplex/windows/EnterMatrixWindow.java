@@ -20,7 +20,7 @@ public class EnterMatrixWindow {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("enter-matrix-window-view.fxml"));
 
-            Scene scene = new Scene(fxmlLoader.load(), 500, 500);
+            Scene scene = new Scene(fxmlLoader.load(), 700, 600);
 
             Stage stage = new Stage();
             stage.setTitle("Simplex - ручной ввод задачи 2");

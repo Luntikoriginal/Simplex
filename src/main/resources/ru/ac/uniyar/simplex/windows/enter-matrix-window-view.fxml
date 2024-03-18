@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
 <VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="20.0"
       fx:controller="ru.ac.uniyar.simplex.controllers.EnterMatrixController">
     <padding>
@@ -11,5 +12,6 @@
 
     <Label text="Ввод матрицы"/>
 
+    <TableView fx:id="matrixTable"/>
 
 </VBox>
